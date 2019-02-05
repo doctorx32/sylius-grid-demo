@@ -1,0 +1,7 @@
+{% if options.vars.class is defined %}
+    <div class="{{ options.vars.class }}">
+        <p>{{ data }}</p>
+    </div>
+{% else %}
+    {{ data }}
+{% endif %}

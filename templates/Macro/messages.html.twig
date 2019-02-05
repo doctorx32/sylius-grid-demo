@@ -1,0 +1,27 @@
+{% macro default(message, icon, type, header) %}
+    <div class="ui icon {{ type|default('') }} message">
+        <i class="{{ icon }} icon"></i>
+        <div class="content">
+            {% if type is not empty %}
+            <div class="header">
+                {{ header|default(type)|trans }}
+            </div>
+            {% endif %}
+            <p>{{ message|trans }}</p>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro info(message) %}
+    <p class="center">{{ message|trans }}</p>
+{% endmacro %}
+
+{% macro success(message) %}
+    {% import _self as messages %}
+    {{ messages.default(message, 'checkmark', 'success', 'ui.success') }}
+{% endmacro %}
+
+{% macro error(message) %}
+    {% import _self as messages %}
+    {{ messages.default(message, 'remove', 'negative', 'ui.error') }}
+{% endmacro %}

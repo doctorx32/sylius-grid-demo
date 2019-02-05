@@ -1,0 +1,11 @@
+{% if options.vars.class is defined %}
+    <div class="{{ options.vars.class }}">
+        {% if data[0] is defined %}
+            <img src="{{ vich_uploader_asset(data[0], 'file')|imagine_filter('list') }}" alt="">
+        {% endif %}
+    </div>
+{% else %}
+    {% if data[0] is defined %}
+        <img src="{{ vich_uploader_asset(data[0], 'file')|imagine_filter('list') }}" alt="">
+    {% endif %}
+{% endif %}

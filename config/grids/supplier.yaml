@@ -1,0 +1,11 @@
+sylius_grid:
+    grids:
+        supplier:
+            driver:
+                name: doctrine/orm
+                options:
+                    class: App\Entity\Supplier
+            fields:
+                id: { type: string }
+                name: { type: string }
+                surname: { type: string }

@@ -1,0 +1,23 @@
+imports:
+    - { resource: "../grids/supplier.yaml" }
+
+sylius_grid:
+    templates:
+        action:
+            default: "@App/Grid/Action/default.html.twig"
+            create: "@App/Grid/Action/create.html.twig"
+            delete: "@App/Grid/Action/delete.html.twig"
+            show: "@App/Grid/Action/show.html.twig"
+            update: "@App/Grid/Action/update.html.twig"
+            apply_transition: "@App/Grid/Action/applyTransition.html.twig"
+            links: "@App/Grid/Action/links.html.twig"
+            archive: "@App/Grid/Action/archive.html.twig"
+        filter:
+            string: "@App/Grid/Filter/string.html.twig"
+            boolean: "@App/Grid/Filter/boolean.html.twig"
+            date: "@App/Grid/Filter/date.html.twig"
+            entity: "@App/Grid/Filter/entity.html.twig"
+            money: "@App/Grid/Filter/money.html.twig"
+            exists: "@App/Grid/Filter/exists.html.twig"
+            state: "@App/Grid/Filter/state.html.twig"
+            selected_company: "@App/Grid/Filter/selected_company.html.twig"
