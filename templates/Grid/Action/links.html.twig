@@ -16,7 +16,7 @@
                 {% set is_link_visible = link.visible is defined ? link.visible : true %}
 
                 {% if is_link_visible %}
-                    {% include '@SyliusUi/Grid/Action/_link.html.twig' %}
+                    {% include 'Grid/Action/_link.html.twig' %}
                 {% endif %}
             {% endfor %}
         </div>

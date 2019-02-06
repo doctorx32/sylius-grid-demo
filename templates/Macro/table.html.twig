@@ -1,5 +1,5 @@
 {% macro headers(grid, definition, requestAttributes) %}
-    {% import '@SyliusUi/Macro/sorting.html.twig' as sorting %}
+    {% import 'Macro/sorting.html.twig' as sorting %}
 
     {% for field in definition.fields|sort_by('position') %}
         {% if field.enabled %}
