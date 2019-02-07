@@ -1,5 +1,5 @@
 App\Entity\Supplier:
-    dummy_{1..10}:
-        name: <name()>
+    dummy_{1..40}:
+        name: <firstName()>
         surname: <lastName()>
         type: <numberBetween(0,2)>
