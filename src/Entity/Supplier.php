@@ -33,14 +33,14 @@ class Supplier implements ResourceInterface
      *
      * @ORM\Column(type="string")
      */
-    private $name;
+    private $name = '';
 
     /**
      * @var string
      *
      * @ORM\Column(type="string")
      */
-    private $surname;
+    private $surname = '';
 
     /**
      * @var int

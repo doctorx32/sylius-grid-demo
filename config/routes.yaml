@@ -1,6 +1,14 @@
-suppliers:
+suppliers_index:
     path: /suppliers
     defaults:
         _controller: app.controller.supplier:indexAction
         _sylius:
             grid: supplier
+
+suppliers_create:
+    path: /suppliers/create
+    defaults:
+        _controller: app.controller.supplier:createAction
+        _sylius:
+            form: App\Form\SupplierCreateType
+
