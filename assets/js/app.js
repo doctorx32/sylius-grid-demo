@@ -13,7 +13,6 @@ import Create from "./create.vue";
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 // const $ = require('jquery');
 
-console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 new Vue({
     el: '#app',
     template: '<Create/>',
